@@ -78,7 +78,7 @@ export default function HeroSection() {
             {/* Main Dashboard Image */}
             <div className="relative bg-white rounded-2xl shadow-2xl border border-gray-200 p-6">
               <Image
-                src="/hero_img1.png"
+                src="./hero_img1.png"
                 alt="NimbleInsights Dashboard Preview"
                 width={600}
                 height={400}

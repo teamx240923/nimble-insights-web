@@ -97,7 +97,7 @@ export default function AboutSection() {
               className="relative z-10"
             >
               <Image
-                src="/hero_img2.png"
+                src="./hero_img2.png"
                 alt="About NimbleInsights - Team and Mission"
                 width={600}
                 height={400}

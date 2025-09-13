@@ -78,7 +78,7 @@ export default function DarkHeroSection() {
               className="relative z-10"
             >
               <Image
-                src="/hero_img1.png"
+                src="./hero_img1.png"
                 alt="NimbleInsights Dashboard Preview"
                 width={600}
                 height={400}

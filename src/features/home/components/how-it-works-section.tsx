@@ -135,7 +135,7 @@ export default function HowItWorksSection() {
               Ready to get started?
             </h3>
             <p className="text-gray-600 mb-8 text-lg leading-relaxed">
-              Most customers are up and running within 24 hours. Let's get your data working for you.
+              Most customers are up and running within 24 hours. Let&apos;s get your data working for you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.button 

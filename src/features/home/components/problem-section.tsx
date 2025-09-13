@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Clock, TrendingDown, Ban, Dice6, ArrowRight, AlertTriangle } from 'lucide-react';
+import { Clock, TrendingDown, Ban, Dice6 } from 'lucide-react';
 
 export default function ProblemSection() {
   const containerVariants = {
@@ -84,9 +84,9 @@ export default function ProblemSection() {
             className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-2xl shadow-lg max-w-4xl mx-auto mb-12 border border-blue-100"
           >
             <blockquote className="text-2xl sm:text-3xl font-bold text-gray-800 text-center relative">
-              <div className="absolute -top-4 -left-4 text-6xl text-blue-200 opacity-50">"</div>
-              60% of business leaders say they can't access data fast enough to make decisions.
-              <div className="absolute -bottom-8 -right-4 text-6xl text-blue-200 opacity-50">"</div>
+              <div className="absolute -top-4 -left-4 text-6xl text-blue-200 opacity-50">&ldquo;</div>
+              60% of business leaders say they can&apos;t access data fast enough to make decisions.
+              <div className="absolute -bottom-8 -right-4 text-6xl text-blue-200 opacity-50">&rdquo;</div>
             </blockquote>
           </motion.div>
         </motion.div>

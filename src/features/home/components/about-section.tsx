@@ -2,32 +2,9 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { Rocket, HandHeart, Zap } from 'lucide-react';
+import { Rocket, Zap } from 'lucide-react';
 
 export default function AboutSection() {
-  const values = [
-    {
-      icon: Rocket,
-      title: "Innovation",
-      description: "Constantly pushing the boundaries of what's possible with AI and data.",
-      bgColor: "bg-blue-50",
-      iconColor: "text-blue-600"
-    },
-    {
-      icon: HandHeart,
-      title: "Partnership",
-      description: "Working closely with our customers to solve real business challenges.",
-      bgColor: "bg-green-50",
-      iconColor: "text-green-600"
-    },
-    {
-      icon: Zap,
-      title: "Speed",
-      description: "Delivering rapid results without compromising on quality or security.",
-      bgColor: "bg-indigo-50",
-      iconColor: "text-indigo-600"
-    }
-  ];
 
   return (
     <section className="py-20 px-6 sm:px-8 lg:px-12 bg-white">

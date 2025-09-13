@@ -80,9 +80,9 @@ export default function DarkProblemSection() {
             className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-2xl max-w-4xl mx-auto mb-12 border border-gray-700"
           >
             <blockquote className="text-2xl sm:text-3xl font-bold text-gray-100 text-center relative">
-              <div className="absolute -top-4 -left-4 text-6xl text-red-400/30">"</div>
-              60% of business leaders say they can't access data fast enough to make decisions.
-              <div className="absolute -bottom-8 -right-4 text-6xl text-red-400/30">"</div>
+              <div className="absolute -top-4 -left-4 text-6xl text-red-400/30">&ldquo;</div>
+              60% of business leaders say they can&apos;t access data fast enough to make decisions.
+              <div className="absolute -bottom-8 -right-4 text-6xl text-red-400/30">&rdquo;</div>
             </blockquote>
           </motion.div>
         </motion.div>

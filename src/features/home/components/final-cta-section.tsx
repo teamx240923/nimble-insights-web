@@ -124,7 +124,7 @@ export default function FinalCTASection() {
           className="mt-16 bg-gray-800 border border-gray-700 p-8 rounded-2xl max-w-4xl mx-auto"
         >
           <h3 className="text-2xl font-bold text-white mb-4">
-            Don't let another day pass making decisions in the dark
+            Don&apos;t let another day pass making decisions in the dark
           </h3>
           <p className="text-gray-300 mb-8 leading-relaxed">
             While you wait, your competitors are already leveraging AI to make faster, 

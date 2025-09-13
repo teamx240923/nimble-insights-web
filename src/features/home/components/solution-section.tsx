@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { MessageSquare, Zap, Link, Clock, Shield, Rocket, CheckCircle, Star } from 'lucide-react';
+import { MessageSquare, Zap, Link, Clock, Shield, Rocket, Star } from 'lucide-react';
 
 export default function SolutionSection() {
   const coreFeatures = [
@@ -264,7 +264,7 @@ export default function SolutionSection() {
                 viewport={{ once: true }}
                 className="text-3xl font-bold mb-6"
               >
-                Ready to unlock your data's potential?
+                Ready to unlock your data&apos;s potential?
               </motion.h3>
               <motion.p 
                 initial={{ opacity: 0 }}

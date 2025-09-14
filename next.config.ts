@@ -1,10 +1,13 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
-  /* config options here */
-  output: process.env.NODE_ENV === "production" ? "export" : undefined, // enables static export only for production
+  output: "export",
+  basePath: isProd ? "/nimble-insights-web" : "",
+  assetPrefix: isProd ? "/nimble-insights-web/" : "",
   images: {
-    unoptimized: true, // disables next/image optimization (not supported on GH Pages)
+    unoptimized: true,
   },
 };
 

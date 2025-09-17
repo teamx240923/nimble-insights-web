@@ -6,9 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint",
-    "export": "next export",
-    "deploy": "npm run build && touch out/.nojekyll && gh-pages -d out"
+    "lint": "eslint"
   },
   "dependencies": {
     "framer-motion": "^12.23.12",
@@ -25,7 +23,6 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
-    "gh-pages": "^6.3.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

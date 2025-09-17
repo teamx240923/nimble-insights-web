@@ -112,7 +112,7 @@ export default function ResultsSection() {
         </motion.div>
         
         {/* Bottom Section */}
-        <motion.div 
+        {/* <motion.div 
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -144,7 +144,7 @@ export default function ResultsSection() {
               </motion.button>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

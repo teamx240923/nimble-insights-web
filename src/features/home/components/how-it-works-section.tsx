@@ -38,7 +38,7 @@ export default function HowItWorksSection() {
   ];
 
   return (
-    <section className="py-20 px-6 sm:px-8 lg:px-12 bg-gray-50">
+    <section id="how-it-works" className="py-20 px-6 sm:px-8 lg:px-12 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <motion.div 
@@ -123,7 +123,7 @@ export default function HowItWorksSection() {
         </div>
         
         {/* Bottom CTA */}
-        <motion.div 
+        {/* <motion.div 
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -154,7 +154,7 @@ export default function HowItWorksSection() {
               </motion.button>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

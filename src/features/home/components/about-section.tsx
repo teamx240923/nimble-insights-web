@@ -7,7 +7,7 @@ import { Rocket, Zap } from 'lucide-react';
 export default function AboutSection() {
 
   return (
-    <section className="py-20 px-6 sm:px-8 lg:px-12 bg-white">
+    <section id="about" className="py-20 px-6 sm:px-8 lg:px-12 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
@@ -73,13 +73,16 @@ export default function AboutSection() {
             
             {/* CTA */}
             <div className="pt-6">
-              <motion.button 
+              <motion.a 
+                href="https://jigsawnetworks.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="bg-gray-900 hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="inline-block bg-gray-900 hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl cursor-pointer"
               >
                 Learn more about Jigsaw Networks →
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
           

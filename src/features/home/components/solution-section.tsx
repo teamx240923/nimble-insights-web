@@ -229,7 +229,7 @@ export default function SolutionSection() {
         </motion.div>
         
         {/* Bottom CTA */}
-        <motion.div 
+        {/* <motion.div 
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -237,7 +237,6 @@ export default function SolutionSection() {
           className="text-center"
         >
           <div className="bg-gradient-to-r from-slate-700 via-slate-600 to-slate-800 text-white p-10 rounded-3xl shadow-2xl max-w-5xl mx-auto relative overflow-hidden">
-            {/* Animated background elements */}
             <div className="absolute top-0 left-0 w-full h-full">
               <motion.div 
                 animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
@@ -284,7 +283,7 @@ export default function SolutionSection() {
               </motion.button>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

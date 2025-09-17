@@ -4,6 +4,13 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 export default function HeroSection() {
+  const scrollToHowItWorks = () => {
+    const howItWorksSection = document.getElementById('how-it-works');
+    if (howItWorksSection) {
+      howItWorksSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative bg-white py-20 px-6 sm:px-8 lg:px-12 overflow-hidden">
       <div className="max-w-7xl mx-auto">
@@ -33,11 +40,9 @@ export default function HeroSection() {
               className="space-y-4"
             >
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                Smart analysts are rare.
+                Turn Data Into
                 <br />
-                <span className="text-gray-600">We built you</span>
-                <br />
-                <span className="text-blue-600">THE ONE.</span>
+                <span className="text-blue-600">Instant Answers.</span>
               </h1>
             </motion.div>
             
@@ -48,7 +53,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-xl text-gray-600 leading-relaxed"
             >
-              Make every team member a decision maker. Connect any data source and get Actionable® insights seamlessly.
+              Ask business questions in plain English and get real-time insights from your ERP, CRM, or spreadsheets — no SQL, no dashboards, no delays.
             </motion.p>
             
             {/* CTA Button */}
@@ -59,6 +64,7 @@ export default function HeroSection() {
               className="pt-4"
             >
               <motion.button 
+                onClick={scrollToHowItWorks}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
                 className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl text-lg"

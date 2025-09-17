@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Phone, MessageSquare, Calendar, Shield, Zap } from 'lucide-react';
+import { Mail, MessageSquare, Calendar, Shield, Zap } from 'lucide-react';
 
 export default function FinalCTASection() {
   const features = [
@@ -16,7 +16,7 @@ export default function FinalCTASection() {
       description: "SOC 2 compliant with role-based access and data encryption."
     },
     {
-      icon: Phone,
+      icon: Mail,
       title: "Expert Support",
       description: "Dedicated success team to ensure you get maximum value from day one."
     }
@@ -45,12 +45,13 @@ export default function FinalCTASection() {
           {/* CTA Button */}
           <div className="pt-8">
             <motion.button 
+              onClick={() => window.open('mailto:help.nimbleinsights@gmail.com', '_blank')}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
               className="bg-white hover:bg-gray-100 text-gray-900 font-bold py-6 px-12 rounded-xl text-xl shadow-2xl hover:shadow-3xl transition-all duration-300 inline-flex items-center gap-3"
             >
-              <Phone className="w-6 h-6" />
-              Talk to Sales
+              <Mail className="w-6 h-6" />
+              Email
             </motion.button>
           </div>
         </motion.div>
@@ -90,7 +91,7 @@ export default function FinalCTASection() {
         </motion.div>
         
         {/* Social Proof */}
-        <motion.div 
+        {/* <motion.div 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
@@ -101,7 +102,6 @@ export default function FinalCTASection() {
             Trusted by forward-thinking companies worldwide
           </p>
           
-          {/* Placeholder for company logos */}
           <div className="flex justify-center items-center space-x-8 opacity-60">
             <div className="bg-gray-800 border border-gray-700 px-6 py-3 rounded-lg text-gray-300 font-semibold">
               Company A
@@ -113,10 +113,10 @@ export default function FinalCTASection() {
               Company C
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
         
         {/* Final Urgency */}
-        <motion.div 
+        {/* <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
@@ -149,7 +149,7 @@ export default function FinalCTASection() {
               Chat with Expert
             </motion.button>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

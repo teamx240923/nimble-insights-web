@@ -1,3 +1,5 @@
+'use client';
+
 export default function DarkFooter() {
   return (
     <footer className="bg-black text-gray-300 py-16 px-6 sm:px-8 lg:px-12 border-t border-gray-800">
@@ -19,7 +21,7 @@ export default function DarkFooter() {
             </div>
             
             {/* Social Links */}
-            <div className="space-y-4">
+            {/* <div className="space-y-4">
               <h4 className="font-semibold text-lg text-white">Connect With Us</h4>
               <div className="flex space-x-4">
                 <a 
@@ -32,7 +34,7 @@ export default function DarkFooter() {
                   </svg>
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
           
           {/* Quick Links */}
@@ -45,11 +47,20 @@ export default function DarkFooter() {
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-gray-400 hover:text-cyan-400 transition-colors duration-200">
+                <a 
+                  href="#about" 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('about')?.scrollIntoView({ 
+                      behavior: 'smooth' 
+                    });
+                  }}
+                  className="text-gray-400 hover:text-cyan-400 transition-colors duration-200 cursor-pointer"
+                >
                   About Us
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#demo" className="text-gray-400 hover:text-cyan-400 transition-colors duration-200">
                   Request a Demo
                 </a>
@@ -63,7 +74,7 @@ export default function DarkFooter() {
                 <a href="#support" className="text-gray-400 hover:text-cyan-400 transition-colors duration-200">
                   Support Center
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
           
@@ -113,12 +124,12 @@ export default function DarkFooter() {
         
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-800">
-          <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+          <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0">
             <p className="text-gray-500 text-sm">
               © 2025 NimbleInsights.ai All rights reserved.
             </p>
             
-            <div className="flex space-x-6 text-sm">
+            {/* <div className="flex space-x-6 text-sm">
               <a href="#privacy" className="text-gray-500 hover:text-cyan-400 transition-colors duration-200">
                 Privacy Policy
               </a>
@@ -128,7 +139,7 @@ export default function DarkFooter() {
               <a href="#cookies" className="text-gray-500 hover:text-cyan-400 transition-colors duration-200">
                 Cookie Policy
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

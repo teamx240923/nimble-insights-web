@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import NextImage from 'next/image';
 import { motion } from 'framer-motion';
 import { Rocket, Zap } from 'lucide-react';
 
@@ -99,8 +99,8 @@ export default function AboutSection() {
               transition={{ duration: 0.3 }}
               className="relative z-10"
             >
-              <Image
-                src="./hero_img2.png"
+              <NextImage
+                src="/hero_img2.png"
                 alt="About NimbleInsights - Team and Mission"
                 width={600}
                 height={400}

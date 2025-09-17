@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import NextImage from 'next/image';
 import { motion } from 'framer-motion';
 
 export default function HeroSection() {
@@ -83,8 +83,8 @@ export default function HeroSection() {
           >
             {/* Main Dashboard Image */}
             <div className="relative bg-white rounded-2xl shadow-2xl border border-gray-200 p-6">
-              <Image
-                src="./hero_img1.png"
+              <NextImage
+                src="/hero_img1.png"
                 alt="NimbleInsights Dashboard Preview"
                 width={600}
                 height={400}

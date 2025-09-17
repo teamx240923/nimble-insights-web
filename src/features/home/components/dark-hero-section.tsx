@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import NextImage from 'next/image';
 import { motion } from 'framer-motion';
 import { Calendar, Quote } from 'lucide-react';
 
@@ -77,7 +77,7 @@ export default function DarkHeroSection() {
               transition={{ duration: 0.3 }}
               className="relative z-10"
             >
-              <Image
+             <NextImage
                 src="./hero_img1.png"
                 alt="NimbleInsights Dashboard Preview"
                 width={600}
